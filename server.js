@@ -54,7 +54,7 @@ app.engine(".hbs", exphbs({
 app.set("view engine", ".hbs");
 
 app.get("/", function(req, res){
-    fetch('https://www.hatchways.io/api/assessment/students')
+    fetch("https://api.jsonbin.io/b/5d2382000e09805769fd1117/2")
     .then(response => response.json())
     .then(json => {
         for (let i = 0; i < json.students.length; i++) {
@@ -64,8 +64,7 @@ app.get("/", function(req, res){
             student.setAverage();
             studentArray.push(student);
         }
-        //console.log(studentArray)
-        // console.log(gradesArray);
+        console.log(studentArray)
         res.render("home", { studentData: studentArray});
 
     });

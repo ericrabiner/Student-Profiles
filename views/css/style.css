@@ -14,10 +14,6 @@ html, body {
     width: 40%;
 }
 
-#studentcontainer::-webkit-scrollbar { 
-    display: none; 
-} 
-
 .col-md- {
     background-color: white;
     width: 50%;
