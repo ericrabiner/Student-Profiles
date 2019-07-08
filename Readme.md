@@ -3,6 +3,7 @@ An application written using Node.js, Express.js, Handlebars.js, JQuery, and Boo
 
 ## Prerequisites
 Install node.js.
+
 Install the following dependencies.
 ```
 npm install express
