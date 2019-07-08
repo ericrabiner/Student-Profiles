@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="container-fluid" id="searchcontainer">
+        <input type="text" id="searchName" placeholder="Search by name">
+        <input type="text" id="searchTag" placeholder="Search by tag">
+    </div>
+    
+    <div class="container-fluid" id="studentcontainer">
+        
+        {{#each studentData}}
+            <div class="row" id="{{@index}}">
+                <div class="col-md-4">
+                    <img src="{{pic}}" class="img-responsive img-thumbnail img-circle"/>
+                </div>
+                <div class="col-md-7">
+                    <h3>{{firstName}} {{lastName}}</h3>
+                    <p>Email: {{email}}</p>
+                    <p>Company: {{company}}</p>
+                    <p>Skill: {{skill}}</p>
+                    <p>Average: {{average}}%</p>
+                    <ul id="expandable">
+                        {{#grades}}
+                            <li>{{grade}}</li>
+                        {{/grades}}
+                    </ul>
+                    <input type="text" class="tagInput" id="expandable" placeholder="Add a tag">
+                </div>
+                <div class="col-md-1">
+                    <div class="expandableButton">+</div>
+                </div> 
+            </div>
+        {{else}}
+            <div>No Data.</div>
+        {{/each}}
+        
+    </div>
+</div>

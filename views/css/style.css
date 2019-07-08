@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid {
+    background-color: lightsteelblue;
+}
+#studentcontainer {
+    background-color: white;
+    overflow-y: scroll;
+    height: calc(100vh - 60px);
+    align-content: stretch;
+    width: 40%;
+}
+
+#studentcontainer::-webkit-scrollbar { 
+    display: none; 
+} 
+
+.col-md- {
+    background-color: white;
+    width: 50%;
+}
+
+#searchcontainer {
+    width: 42%;
+}
+
+#searchName {
+    height: 30px;
+    width: 100%;
+}
+
+#searchTag {
+    height: 30px;
+    width: 100%;
+}
+
+p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.expandableButton {
+    cursor: pointer;
+    font-size: 26px;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+#expandable{
+    display: none;
+}
+
+span {
+    width: 10%;
+}
+
+row {
+    display: block;
+}
